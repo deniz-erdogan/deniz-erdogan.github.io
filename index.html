@@ -22,7 +22,7 @@
                 <p class="name" style="text-align: center;">
                   Burhan Karahasan
                 </p>
-                <p>I'm a mechanical engineering & electrical and electronics engineering student at Koc University in Istanbul.</a>.
+                <p>I'm a mechanical engineering & electrical and electronics engineering student at Koc University in Istanbul.</a>
                 </p>
 
                 <p style="text-align:center">
@@ -43,12 +43,48 @@
               <td style="padding:20px;width:100%;vertical-align:middle">
                 <h2>Research</h2>
                 <p>
-                  <span class="highlight">highlighted</span>.
+                  Currently conducting research on a robot guided surgery project, solving problems on trajectory generation and computer vision.<span class="highlight"> </span>.
                 </p>
               </td>
             </tr>
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr onmouseout="thresh_stop()" onmouseover="thresh_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='thresh_image'>
+                    <img src='images/thresh_after.png' width="160"></div>
+                  <img src='images/thresh_before.jpg' width="160">
+                </div>
+                <script type="text/javascript">
+                  function thresh_start() {
+                    document.getElementById('thresh_image').style.opacity = "1";
+                  }
+
+                  function thresh_stop() {
+                    document.getElementById('thresh_image').style.opacity = "0";
+                  }
+                  thresh_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://www.sciencedirect.com/science/article/pii/S1746809423004275">
+                  <span class="papertitle">A novel real-time wireless sensor integration for enhancing positive pressure system operation in single limb passive vented circuit</span>
+                </a>
+                <br>
+                <strong>Munam Arshad, Eda Guven, Burhan Karahasan, Ismail Lazoglu</strong>
+                <br>
+                <em>BSPC</em>, 2023 &nbsp <font color=#FF8080><strong>(Spotlight)</strong></font>
+                <br>
+                <a href="data/MunamBSPC2023.bib">bibtex</a>
+                <br>
+                <p></p>
+                <p>
+                A simple and fast Bayesian algorithm that can be written in ~10 lines of code outperforms or matches giant CNNs on image binarization, and unifies three classic thresholding algorithms.
+                </p>
+              </td>
+            </tr>  
+          </tbody></table>
 
   </body>
 </html>

@@ -371,31 +371,105 @@ a:hover, a:focus {
     left: 21px;
   }
   
-  /* Responsive Company Logo Styles */
-  .company-logo-container, .multi-logo-container {
+  /* Improved Mobile Logo Styles */
+  .company-logo-container {
+    position: relative;
+    left: -50px !important;
+    top: -10px;
+    margin-bottom: 15px;
     width: 65px;
     height: 65px;
-    top: 0;
   }
-  
-  .timeline-item:nth-child(odd) .company-logo-container,
-  .timeline-item:nth-child(even) .company-logo-container,
-  .timeline-item:nth-child(odd) .multi-logo-container,
-  .timeline-item:nth-child(even) .multi-logo-container {
-    left: -32px;
+
+  .multi-logo-container {
+    position: relative;
+    left: -50px !important;
+    top: -10px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: auto;
   }
-  
+
   .company-logo {
     width: 65px;
     height: 65px;
     padding: 8px;
   }
-  
+
+  .timeline-content {
+    margin-top: -20px;
+  }
+
+  .timeline-item:nth-child(odd) .company-logo-container,
+  .timeline-item:nth-child(even) .company-logo-container {
+    right: auto;
+  }
+
+  .timeline-item:nth-child(odd) .multi-logo-container,
+  .timeline-item:nth-child(even) .multi-logo-container {
+    right: auto;
+  }
+
+  /* Adjust timeline content for mobile */
+  .timeline-content::after {
+    display: none; /* Remove the arrow on mobile */
+  }
+
+  .timeline-content {
+    padding: 20px;
+  }
+
+  .experience-card {
+    transform: none !important;
+  }
+
+  .experience-card .date {
+    margin-top: 10px;
+  }
+
+  .timeline-content {
+    background-color: white;
+    margin-bottom: 30px;
+  }
+
+  .timeline-item {
+    margin-bottom: 0;
+  }
+
+  .timeline-item:last-child {
+    margin-bottom: 30px;
+  }
+
+  /* Improve spacing between multiple logos on mobile */
+  .multi-logo-container .company-logo:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+/* Additional mobile adjustments */
+@media screen and (max-width: 480px) {
+  .timeline-item {
+    padding-left: 50px;
+    padding-right: 15px;
+  }
+
+  .company-logo-container,
   .multi-logo-container {
-    gap: 10px;
-    flex-direction: row;
-    top: -75px;
-    width: auto;
+    left: -40px !important;
+  }
+
+  .timeline::after {
+    left: 21px;
+  }
+
+  .timeline-dot {
+    left: 11px;
+  }
+
+  .timeline-item:nth-child(even) .timeline-dot {
+    left: 11px;
   }
 }
 

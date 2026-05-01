@@ -21,7 +21,6 @@ body {
   color: var(--text-color);
   line-height: 1.7;
   background-color: #fff;
-  transition: background-color 0.25s ease, color 0.25s ease;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -769,84 +768,6 @@ a:hover, a:focus {
   font-size: 0.8rem;
   font-weight: 500;
   margin-bottom: 8px;
-}
-
-.theme-toggle {
-  min-width: 38px;
-}
-
-body.dark-mode {
-  --primary-color: #dbeafe;
-  --secondary-color: #60a5fa;
-  --accent-color: #f87171;
-  --text-color: #e5e7eb;
-  --light-bg: #0f172a;
-  --dark-bg: #020617;
-  --card-border: rgba(148, 163, 184, 0.22);
-  --card-shadow: 0 8px 22px rgba(2, 6, 23, 0.55);
-  --card-shadow-hover: 0 12px 28px rgba(2, 6, 23, 0.65);
-  background-color: #020617;
-}
-
-body.dark-mode .bg-white {
-  background-color: #0b1224 !important;
-}
-
-body.dark-mode .bg-light {
-  background-color: #0f172a !important;
-}
-
-body.dark-mode .navbar,
-body.dark-mode .navbar.navbar-scrolled {
-  background-color: rgba(2, 6, 23, 0.85) !important;
-}
-
-body.dark-mode .navbar .navbar-brand {
-  color: #f8fafc;
-}
-
-body.dark-mode .navbar .nav-link {
-  color: #cbd5e1;
-}
-
-body.dark-mode .navbar .nav-link:hover,
-body.dark-mode .navbar .nav-link:focus {
-  color: #ffffff;
-}
-
-body.dark-mode .navbar .nav-link.active {
-  color: #93c5fd;
-}
-
-body.dark-mode .navbar .navbar-toggler {
-  border-color: rgba(148, 163, 184, 0.5);
-}
-
-body.dark-mode .navbar .navbar-toggler-icon {
-  filter: invert(1) brightness(1.2);
-}
-
-body.dark-mode .research-statement,
-body.dark-mode .text-muted,
-body.dark-mode .publication-venue {
-  color: #9ca3af !important;
-}
-
-body.dark-mode .thesis-card {
-  background: linear-gradient(145deg, #0f172a 0%, #172036 100%);
-}
-
-body.dark-mode .btn-outline-primary,
-body.dark-mode .btn-outline-secondary {
-  color: #cbd5e1;
-  border-color: rgba(148, 163, 184, 0.45);
-}
-
-body.dark-mode .btn-outline-primary:hover,
-body.dark-mode .btn-outline-secondary:hover {
-  color: #020617;
-  background-color: #93c5fd;
-  border-color: #93c5fd;
 }
 
 @media (max-width: 576px) {
